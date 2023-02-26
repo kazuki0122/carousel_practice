@@ -1,5 +1,5 @@
 # カルーセルのデモアプリ
-### react-useのuse-intersectionを使って、カルーセル機能を実装しました。airbnbを意識してみました。
+### react-useのuse-intersectionを使って、カルーセル機能を実装しました。
 https://carousel-practice.vercel.app/
 
 ### デモ動画

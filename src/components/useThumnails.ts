@@ -11,7 +11,7 @@ export type LandscapeThumbnail = {
 }
 
 type UseThumnails = () => {
-  landscapeThumbnails: Array<LandscapeThumbnail>
+  landscapeThumbnails: ReadonlyArray<LandscapeThumbnail>
   scrollToPrevImage: () => void
   scrollToNextImage: () => void
   currentThumbnailIndex: number
@@ -41,7 +41,7 @@ export const useThumnails: UseThumnails = () => {
       src: landscape5,
       alt: '風景5'
     },
-  ]
+  ] as const
 
   const scrollTo = (index: number): void => {
     const target = document.querySelector<HTMLLIElement>(
