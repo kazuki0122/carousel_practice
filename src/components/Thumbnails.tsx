@@ -26,7 +26,7 @@ export const Thumbnails: FC = () => {
           ease-in
           absolute
           top-1/2
-          left-0
+          left-1
           -translate-y-1/2
           h-[24px]
           w-[24px]
@@ -95,7 +95,7 @@ export const Thumbnails: FC = () => {
           duration-250
           absolute
           top-1/2
-          right-0
+          right-1
           -translate-y-1/2
           h-[24px]
           w-[24px]
