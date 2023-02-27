@@ -48,6 +48,7 @@ export const Thumbnails: FC = () => {
             snap-x
             snap-mandatory
             scroll-smooth
+            rounded-3xl
             m-0
             p-0
           "

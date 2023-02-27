@@ -31,9 +31,9 @@ export const ThumbnailList: FC<Props> = ({
     <li
       className="list-none snap-start"
       ref={listItemRef}
-      image-id={`image-id:${index}`}>
+      data-image-id={`image-id:${index}`}>
       <img
-        className="min-w-[330px] h-[300px] rounded-3xl"
+        className="min-w-[330px] h-[300px]"
         src={Thumbnail.src} alt={Thumbnail.alt}
       />
     </li>

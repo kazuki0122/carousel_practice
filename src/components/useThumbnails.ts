@@ -45,7 +45,7 @@ export const useThumbnails: UseThumbnails = () => {
 
   const scrollTo = (index: number): void => {
     const target = document.querySelector<HTMLLIElement>(
-      `[image-id="image-id:${index}"]`,
+      `[data-image-id="image-id:${index}"]`,
     )
     if (!target) return
 
