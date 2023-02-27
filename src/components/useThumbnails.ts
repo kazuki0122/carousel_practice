@@ -10,7 +10,7 @@ export type LandscapeThumbnail = {
   alt: string;
 }
 
-type UseThumnails = () => {
+type UseThumbnails = () => {
   landscapeThumbnails: ReadonlyArray<LandscapeThumbnail>
   scrollToPrevImage: () => void
   scrollToNextImage: () => void
@@ -18,7 +18,7 @@ type UseThumnails = () => {
   setCurrentThumbnailIndex: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const useThumnails: UseThumnails = () => {
+export const useThumbnails: UseThumbnails = () => {
 
   const landscapeThumbnails = [
     {

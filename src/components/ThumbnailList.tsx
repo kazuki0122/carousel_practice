@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef } from "react"
 import { useIntersection } from "react-use"
-import { LandscapeThumbnail } from "./useThumnails"
+import { LandscapeThumbnail } from "./useThumbnails"
 
 type Props = {
   Thumbnail: LandscapeThumbnail

@@ -3,7 +3,7 @@ import { ThumbnailList } from "./ThumbnailList"
 
 import { ChevronLeftIcon } from '@heroicons/react/20/solid'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import { useThumnails } from "./useThumnails"
+import { useThumbnails } from "./useThumbnails"
 
 export const Thumbnails: FC = () => {
   const {
@@ -12,7 +12,7 @@ export const Thumbnails: FC = () => {
     scrollToNextImage,
     currentThumbnailIndex,
     setCurrentThumbnailIndex
-  } = useThumnails()
+  } = useThumbnails()
 
   return(
     <div className="group relative w-[330px] mt-4 ml-4">
