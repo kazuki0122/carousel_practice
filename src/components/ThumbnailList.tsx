@@ -15,6 +15,7 @@ export const ThumbnailList: FC<Props> = ({
 }) => {
   const listItemRef = useRef<HTMLLIElement>(null)
   const intersection = useIntersection(listItemRef, {
+    // Android Chromeでスクロール判定できなかったためthresholdの値を0.99に変更
     threshold: 0.99,
   })
 
