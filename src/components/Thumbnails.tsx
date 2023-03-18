@@ -19,8 +19,6 @@ export const Thumbnails: FC = () => {
       <button
         className={`
           ${currentThumbnailIndex === 0 && 'hidden'}
-          opacity-0
-          group-hover:opacity-100
           transition
           duration-250
           ease-in
@@ -90,8 +88,6 @@ export const Thumbnails: FC = () => {
       <button
         className={`
           ${currentThumbnailIndex === landscapeThumbnails.length -1 && 'hidden'}
-          opacity-0
-          group-hover:opacity-100
           transition
           duration-250
           absolute
