@@ -15,11 +15,11 @@ export const ThumbnailList: FC<Props> = ({
 }) => {
   const listItemRef = useRef<HTMLLIElement>(null)
   const intersection = useIntersection(listItemRef, {
-    threshold: 1,
+    threshold: 0.99,
   })
 
   useEffect(() => {
-    if (intersection?.intersectionRatio === 1) {
+    if (intersection?.intersectionRatio ?? 0 >= 0.99) {
       setCurrentThumbnailIndex(index)
     }
   }, [
