@@ -29,7 +29,7 @@ export const ThumbnailList: FC<Props> = ({
 
   return (
     <li
-      className="list-none snap-start"
+      className="list-none snap-start snap-always"
       ref={listItemRef}
       data-image-id={`image-id:${index}`}>
       <img
